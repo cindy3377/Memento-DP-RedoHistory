@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.Controller">
+    <VBox spacing="10" alignment="CENTER" prefWidth="400" prefHeight="300">
+        <Rectangle fx:id="rect1" width="100" height="50" fill="RED"/>
+        <Rectangle fx:id="rect2" width="100" height="50" fill="GREEN"/>
+        <Rectangle fx:id="rect3" width="100" height="50" fill="BLUE"/>
+        <CheckBox fx:id="checkBox" text="Option"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Undo" onAction="#handleUndo"/>
+            <Button text="Redo" onAction="#handleRedo"/>
+            <Button text="History" onAction="#handleHistory"/>
+        </HBox>
+    </VBox>
+</AnchorPane>
